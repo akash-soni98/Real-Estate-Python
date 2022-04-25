@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -152,7 +153,8 @@ SEVER_MAIL = 'arshakash276@gmail.com'
 EMAIL_HOST_PASSWORD ='Akash@383'
 EMAIL_USE_TLS = True
 
-
+#Activate django heroku
+django_heroku.settings(locals())
 
 
 # Default primary key field type
